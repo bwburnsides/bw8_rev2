@@ -3,3 +3,5 @@
 *.bin
 __pycache__/
 .mypy_cache/
+.vscode/
+bw8/target/
