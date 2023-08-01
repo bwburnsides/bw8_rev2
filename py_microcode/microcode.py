@@ -42,10 +42,10 @@ def generate_microcode(state: State) -> Microcode:
     if state.opcode is NormalOpcode.NoOperation:
         microcode += MicroOperation(reset_sequencer=True)
 
-    if state.opcode in MoveRegister:
+    if MoveRegister(state.opcode):
         return MoveRegister.generate_microcode(state)
 
-    if state.opcode in InputRegister:
+    if InputRegister(state.opcode):
         return InputRegister.generate_microcode(state)
 
     if state.opcode is NormalOpcode.InputPortToA:

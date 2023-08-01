@@ -10,7 +10,7 @@ class InstructionMeta(type):
     def __init__(cls, name: str, bases: tuple[type, ...], dct: dict[str, Callable]):
         cls.opcodes: dict[OpcodeType, tuple]
 
-    def __contains__(cls, opcode: OpcodeType) -> bool:
+    def __call__(cls, opcode: OpcodeType) -> bool:
         return opcode in cls.opcodes.keys()
 
 
