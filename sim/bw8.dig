@@ -753,7 +753,7 @@
         </entry>
         <entry>
           <string>RectWidth</string>
-          <int>31</int>
+          <int>30</int>
         </entry>
         <entry>
           <string>RectRight</string>
@@ -1136,7 +1136,7 @@
           <int>8</int>
         </entry>
       </elementAttributes>
-      <pos x="1780" y="1260"/>
+      <pos x="1760" y="1260"/>
     </visualElement>
     <visualElement>
       <elementName>Probe</elementName>
@@ -3730,7 +3730,7 @@
         </entry>
         <entry>
           <string>RectHeight</string>
-          <int>16</int>
+          <int>17</int>
         </entry>
         <entry>
           <string>RectInside</string>
@@ -3742,10 +3742,10 @@
         </entry>
         <entry>
           <string>RectWidth</string>
-          <int>21</int>
+          <int>22</int>
         </entry>
       </elementAttributes>
-      <pos x="1840" y="800"/>
+      <pos x="1820" y="800"/>
     </visualElement>
     <visualElement>
       <elementName>Rectangle</elementName>
@@ -3776,10 +3776,10 @@
         </entry>
         <entry>
           <string>RectWidth</string>
-          <int>21</int>
+          <int>22</int>
         </entry>
       </elementAttributes>
-      <pos x="1840" y="1160"/>
+      <pos x="1820" y="1160"/>
     </visualElement>
     <visualElement>
       <elementName>Rectangle</elementName>
@@ -4357,7 +4357,7 @@ while in KernelMode</string>
           <boolean>false</boolean>
         </entry>
       </elementAttributes>
-      <pos x="1855" y="892"/>
+      <pos x="1846" y="899"/>
     </visualElement>
     <visualElement>
       <elementName>Tunnel</elementName>
@@ -5342,14 +5342,13 @@ while in KernelMode</string>
       <elementAttributes>
         <entry>
           <string>Description</string>
-          <string>Reset Logic
-- Asynchronous Activation?
-- Synchronous Deactivation?
-- Reset via IO?
-- Reset upon nested NMI.</string>
+          <string>TODO
+- Reset upon nested NMI.
+- Memory Acknowledge
+- Encode SysFlags Control Lines</string>
         </entry>
       </elementAttributes>
-      <pos x="-120" y="1060"/>
+      <pos x="-460" y="1280"/>
     </visualElement>
     <visualElement>
       <elementName>Tunnel</elementName>
@@ -5529,20 +5528,6 @@ Just ~AssertSystemBus?</string>
         </entry>
       </elementAttributes>
       <pos x="-1605" y="761"/>
-    </visualElement>
-    <visualElement>
-      <elementName>Text</elementName>
-      <elementAttributes>
-        <entry>
-          <string>textFontSize</string>
-          <int>16</int>
-        </entry>
-        <entry>
-          <string>Description</string>
-          <string>TODO: Encode SysFlags control lines</string>
-        </entry>
-      </elementAttributes>
-      <pos x="-80" y="540"/>
     </visualElement>
     <visualElement>
       <elementName>reg8.dig</elementName>
@@ -7437,6 +7422,306 @@ Just ~AssertSystemBus?</string>
   </visualElements>
   <wires>
     <wire>
+      <p1 x="-1040" y="-680"/>
+      <p2 x="-920" y="-560"/>
+    </wire>
+    <wire>
+      <p1 x="-920" y="-560"/>
+      <p2 x="-820" y="-460"/>
+    </wire>
+    <wire>
+      <p1 x="-820" y="-680"/>
+      <p2 x="-940" y="-560"/>
+    </wire>
+    <wire>
+      <p1 x="-1040" y="-460"/>
+      <p2 x="-940" y="-560"/>
+    </wire>
+    <wire>
+      <p1 x="-1040" y="-680"/>
+      <p2 x="-1060" y="-540"/>
+    </wire>
+    <wire>
+      <p1 x="-1040" y="-460"/>
+      <p2 x="-1060" y="-600"/>
+    </wire>
+    <wire>
+      <p1 x="-800" y="-600"/>
+      <p2 x="-820" y="-460"/>
+    </wire>
+    <wire>
+      <p1 x="-820" y="-680"/>
+      <p2 x="-800" y="-540"/>
+    </wire>
+    <wire>
+      <p1 x="-960" y="-700"/>
+      <p2 x="-820" y="-680"/>
+    </wire>
+    <wire>
+      <p1 x="-1040" y="-680"/>
+      <p2 x="-900" y="-700"/>
+    </wire>
+    <wire>
+      <p1 x="-1040" y="-460"/>
+      <p2 x="-900" y="-440"/>
+    </wire>
+    <wire>
+      <p1 x="-960" y="-440"/>
+      <p2 x="-820" y="-460"/>
+    </wire>
+    <wire>
+      <p1 x="-800" y="-540"/>
+      <p2 x="-900" y="-280"/>
+    </wire>
+    <wire>
+      <p1 x="-1220" y="-540"/>
+      <p2 x="-960" y="-440"/>
+    </wire>
+    <wire>
+      <p1 x="-960" y="-860"/>
+      <p2 x="-1060" y="-600"/>
+    </wire>
+    <wire>
+      <p1 x="-900" y="-700"/>
+      <p2 x="-640" y="-600"/>
+    </wire>
+    <wire>
+      <p1 x="-1220" y="-540"/>
+      <p2 x="-1060" y="-600"/>
+    </wire>
+    <wire>
+      <p1 x="-1040" y="-680"/>
+      <p2 x="-1060" y="-600"/>
+    </wire>
+    <wire>
+      <p1 x="-820" y="-460"/>
+      <p2 x="-800" y="-540"/>
+    </wire>
+    <wire>
+      <p1 x="-640" y="-600"/>
+      <p2 x="-800" y="-540"/>
+    </wire>
+    <wire>
+      <p1 x="-820" y="-680"/>
+      <p2 x="-900" y="-700"/>
+    </wire>
+    <wire>
+      <p1 x="-820" y="-680"/>
+      <p2 x="-960" y="-700"/>
+    </wire>
+    <wire>
+      <p1 x="-960" y="-860"/>
+      <p2 x="-900" y="-700"/>
+    </wire>
+    <wire>
+      <p1 x="-960" y="-440"/>
+      <p2 x="-900" y="-280"/>
+    </wire>
+    <wire>
+      <p1 x="-900" y="-440"/>
+      <p2 x="-1040" y="-460"/>
+    </wire>
+    <wire>
+      <p1 x="-960" y="-440"/>
+      <p2 x="-1040" y="-460"/>
+    </wire>
+    <wire>
+      <p1 x="-1060" y="-600"/>
+      <p2 x="-1040" y="-680"/>
+    </wire>
+    <wire>
+      <p1 x="-960" y="-700"/>
+      <p2 x="-1040" y="-680"/>
+    </wire>
+    <wire>
+      <p1 x="-820" y="-680"/>
+      <p2 x="-800" y="-600"/>
+    </wire>
+    <wire>
+      <p1 x="-900" y="-700"/>
+      <p2 x="-820" y="-680"/>
+    </wire>
+    <wire>
+      <p1 x="-820" y="-460"/>
+      <p2 x="-900" y="-440"/>
+    </wire>
+    <wire>
+      <p1 x="-1060" y="-540"/>
+      <p2 x="-1040" y="-460"/>
+    </wire>
+    <wire>
+      <p1 x="-1040" y="-460"/>
+      <p2 x="-960" y="-440"/>
+    </wire>
+    <wire>
+      <p1 x="-880" y="-620"/>
+      <p2 x="-1040" y="-460"/>
+    </wire>
+    <wire>
+      <p1 x="-1120" y="-460"/>
+      <p2 x="-880" y="-620"/>
+    </wire>
+    <wire>
+      <p1 x="-820" y="-680"/>
+      <p2 x="-980" y="-520"/>
+    </wire>
+    <wire>
+      <p1 x="-980" y="-520"/>
+      <p2 x="-740" y="-680"/>
+    </wire>
+    <wire>
+      <p1 x="-880" y="-520"/>
+      <p2 x="-1040" y="-760"/>
+    </wire>
+    <wire>
+      <p1 x="-880" y="-520"/>
+      <p2 x="-1040" y="-680"/>
+    </wire>
+    <wire>
+      <p1 x="-820" y="-380"/>
+      <p2 x="-980" y="-620"/>
+    </wire>
+    <wire>
+      <p1 x="-820" y="-460"/>
+      <p2 x="-980" y="-620"/>
+    </wire>
+    <wire>
+      <p1 x="-1220" y="-540"/>
+      <p2 x="-1040" y="-460"/>
+    </wire>
+    <wire>
+      <p1 x="-1040" y="-680"/>
+      <p2 x="-960" y="-860"/>
+    </wire>
+    <wire>
+      <p1 x="-820" y="-680"/>
+      <p2 x="-640" y="-600"/>
+    </wire>
+    <wire>
+      <p1 x="-900" y="-280"/>
+      <p2 x="-820" y="-460"/>
+    </wire>
+    <wire>
+      <p1 x="-900" y="-700"/>
+      <p2 x="-960" y="-860"/>
+    </wire>
+    <wire>
+      <p1 x="-640" y="-600"/>
+      <p2 x="-820" y="-460"/>
+    </wire>
+    <wire>
+      <p1 x="-820" y="-460"/>
+      <p2 x="-900" y="-280"/>
+    </wire>
+    <wire>
+      <p1 x="-900" y="-280"/>
+      <p2 x="-960" y="-440"/>
+    </wire>
+    <wire>
+      <p1 x="-1060" y="-600"/>
+      <p2 x="-1220" y="-540"/>
+    </wire>
+    <wire>
+      <p1 x="-640" y="-600"/>
+      <p2 x="-920" y="-560"/>
+    </wire>
+    <wire>
+      <p1 x="-920" y="-560"/>
+      <p2 x="-900" y="-280"/>
+    </wire>
+    <wire>
+      <p1 x="-940" y="-560"/>
+      <p2 x="-900" y="-280"/>
+    </wire>
+    <wire>
+      <p1 x="-940" y="-560"/>
+      <p2 x="-1220" y="-540"/>
+    </wire>
+    <wire>
+      <p1 x="-960" y="-860"/>
+      <p2 x="-940" y="-560"/>
+    </wire>
+    <wire>
+      <p1 x="-960" y="-860"/>
+      <p2 x="-920" y="-560"/>
+    </wire>
+    <wire>
+      <p1 x="-960" y="-860"/>
+      <p2 x="-1040" y="-680"/>
+    </wire>
+    <wire>
+      <p1 x="-1040" y="-760"/>
+      <p2 x="-960" y="-860"/>
+    </wire>
+    <wire>
+      <p1 x="-960" y="-860"/>
+      <p2 x="-1220" y="-540"/>
+    </wire>
+    <wire>
+      <p1 x="-960" y="-860"/>
+      <p2 x="-640" y="-600"/>
+    </wire>
+    <wire>
+      <p1 x="-640" y="-600"/>
+      <p2 x="-740" y="-680"/>
+    </wire>
+    <wire>
+      <p1 x="-640" y="-600"/>
+      <p2 x="-820" y="-680"/>
+    </wire>
+    <wire>
+      <p1 x="-640" y="-600"/>
+      <p2 x="-900" y="-280"/>
+    </wire>
+    <wire>
+      <p1 x="-900" y="-280"/>
+      <p2 x="-820" y="-380"/>
+    </wire>
+    <wire>
+      <p1 x="-1120" y="-460"/>
+      <p2 x="-1220" y="-540"/>
+    </wire>
+    <wire>
+      <p1 x="-1220" y="-540"/>
+      <p2 x="-900" y="-280"/>
+    </wire>
+    <wire>
+      <p1 x="-1040" y="-460"/>
+      <p2 x="-1220" y="-540"/>
+    </wire>
+    <wire>
+      <p1 x="-1040" y="-680"/>
+      <p2 x="-1120" y="-460"/>
+    </wire>
+    <wire>
+      <p1 x="-1040" y="-760"/>
+      <p2 x="-820" y="-680"/>
+    </wire>
+    <wire>
+      <p1 x="-740" y="-680"/>
+      <p2 x="-820" y="-460"/>
+    </wire>
+    <wire>
+      <p1 x="-1040" y="-460"/>
+      <p2 x="-820" y="-380"/>
+    </wire>
+    <wire>
+      <p1 x="-1220" y="-540"/>
+      <p2 x="-1040" y="-760"/>
+    </wire>
+    <wire>
+      <p1 x="-1120" y="-460"/>
+      <p2 x="-900" y="-280"/>
+    </wire>
+    <wire>
+      <p1 x="-820" y="-380"/>
+      <p2 x="-640" y="-600"/>
+    </wire>
+    <wire>
+      <p1 x="-960" y="-860"/>
+      <p2 x="-740" y="-680"/>
+    </wire>
+    <wire>
       <p1 x="780" y="1280"/>
       <p2 x="800" y="1280"/>
     </wire>
@@ -7503,6 +7788,10 @@ Just ~AssertSystemBus?</string>
     <wire>
       <p1 x="160" y="260"/>
       <p2 x="200" y="260"/>
+    </wire>
+    <wire>
+      <p1 x="-980" y="-520"/>
+      <p2 x="-880" y="-520"/>
     </wire>
     <wire>
       <p1 x="1560" y="1800"/>
@@ -7641,6 +7930,10 @@ Just ~AssertSystemBus?</string>
       <p2 x="200" y="280"/>
     </wire>
     <wire>
+      <p1 x="-1220" y="-540"/>
+      <p2 x="-1060" y="-540"/>
+    </wire>
+    <wire>
       <p1 x="-1560" y="1820"/>
       <p2 x="-1540" y="1820"/>
     </wire>
@@ -7714,7 +8007,7 @@ Just ~AssertSystemBus?</string>
     </wire>
     <wire>
       <p1 x="1120" y="800"/>
-      <p2 x="1800" y="800"/>
+      <p2 x="1780" y="800"/>
     </wire>
     <wire>
       <p1 x="-460" y="800"/>
@@ -7829,6 +8122,10 @@ Just ~AssertSystemBus?</string>
       <p2 x="200" y="300"/>
     </wire>
     <wire>
+      <p1 x="-940" y="-560"/>
+      <p2 x="-920" y="-560"/>
+    </wire>
+    <wire>
       <p1 x="-1540" y="1840"/>
       <p2 x="-1500" y="1840"/>
     </wire>
@@ -7941,7 +8238,7 @@ Just ~AssertSystemBus?</string>
       <p2 x="2240" y="1340"/>
     </wire>
     <wire>
-      <p1 x="1820" y="1340"/>
+      <p1 x="1800" y="1340"/>
       <p2 x="1980" y="1340"/>
     </wire>
     <wire>
@@ -8007,6 +8304,10 @@ Just ~AssertSystemBus?</string>
     <wire>
       <p1 x="-660" y="320"/>
       <p2 x="-600" y="320"/>
+    </wire>
+    <wire>
+      <p1 x="-940" y="-580"/>
+      <p2 x="-920" y="-580"/>
     </wire>
     <wire>
       <p1 x="-840" y="1860"/>
@@ -8237,6 +8538,14 @@ Just ~AssertSystemBus?</string>
       <p2 x="2040" y="340"/>
     </wire>
     <wire>
+      <p1 x="-1060" y="-600"/>
+      <p2 x="-800" y="-600"/>
+    </wire>
+    <wire>
+      <p1 x="-800" y="-600"/>
+      <p2 x="-640" y="-600"/>
+    </wire>
+    <wire>
       <p1 x="-1300" y="1880"/>
       <p2 x="-1260" y="1880"/>
     </wire>
@@ -8437,6 +8746,10 @@ Just ~AssertSystemBus?</string>
       <p2 x="-1000" y="360"/>
     </wire>
     <wire>
+      <p1 x="-980" y="-620"/>
+      <p2 x="-880" y="-620"/>
+    </wire>
+    <wire>
       <p1 x="-1340" y="1900"/>
       <p2 x="-1260" y="1900"/>
     </wire>
@@ -8635,6 +8948,10 @@ Just ~AssertSystemBus?</string>
     <wire>
       <p1 x="-40" y="380"/>
       <p2 x="-20" y="380"/>
+    </wire>
+    <wire>
+      <p1 x="-1000" y="-640"/>
+      <p2 x="-860" y="-640"/>
     </wire>
     <wire>
       <p1 x="-980" y="1920"/>
@@ -8857,12 +9174,12 @@ Just ~AssertSystemBus?</string>
       <p2 x="2480" y="1680"/>
     </wire>
     <wire>
-      <p1 x="2480" y="1680"/>
-      <p2 x="2500" y="1680"/>
-    </wire>
-    <wire>
       <p1 x="-760" y="1680"/>
       <p2 x="-720" y="1680"/>
+    </wire>
+    <wire>
+      <p1 x="2480" y="1680"/>
+      <p2 x="2500" y="1680"/>
     </wire>
     <wire>
       <p1 x="-1260" y="400"/>
@@ -8911,6 +9228,10 @@ Just ~AssertSystemBus?</string>
     <wire>
       <p1 x="840" y="400"/>
       <p2 x="880" y="400"/>
+    </wire>
+    <wire>
+      <p1 x="-1020" y="-660"/>
+      <p2 x="-840" y="-660"/>
     </wire>
     <wire>
       <p1 x="-320" y="660"/>
@@ -9037,12 +9358,12 @@ Just ~AssertSystemBus?</string>
       <p2 x="800" y="1440"/>
     </wire>
     <wire>
-      <p1 x="800" y="1440"/>
-      <p2 x="920" y="1440"/>
-    </wire>
-    <wire>
       <p1 x="1280" y="1440"/>
       <p2 x="1340" y="1440"/>
+    </wire>
+    <wire>
+      <p1 x="800" y="1440"/>
+      <p2 x="920" y="1440"/>
     </wire>
     <wire>
       <p1 x="-1280" y="160"/>
@@ -9137,6 +9458,14 @@ Just ~AssertSystemBus?</string>
       <p2 x="200" y="420"/>
     </wire>
     <wire>
+      <p1 x="-1040" y="-680"/>
+      <p2 x="-820" y="-680"/>
+    </wire>
+    <wire>
+      <p1 x="-820" y="-680"/>
+      <p2 x="-740" y="-680"/>
+    </wire>
+    <wire>
       <p1 x="1500" y="680"/>
       <p2 x="1820" y="680"/>
     </wire>
@@ -9169,10 +9498,6 @@ Just ~AssertSystemBus?</string>
       <p2 x="-20" y="680"/>
     </wire>
     <wire>
-      <p1 x="-1380" y="1960"/>
-      <p2 x="-1340" y="1960"/>
-    </wire>
-    <wire>
       <p1 x="1660" y="1960"/>
       <p2 x="1680" y="1960"/>
     </wire>
@@ -9185,12 +9510,16 @@ Just ~AssertSystemBus?</string>
       <p2 x="1980" y="1960"/>
     </wire>
     <wire>
-      <p1 x="-1340" y="1960"/>
-      <p2 x="-1160" y="1960"/>
+      <p1 x="-1380" y="1960"/>
+      <p2 x="-1340" y="1960"/>
     </wire>
     <wire>
       <p1 x="-1160" y="1960"/>
       <p2 x="-980" y="1960"/>
+    </wire>
+    <wire>
+      <p1 x="-1340" y="1960"/>
+      <p2 x="-1160" y="1960"/>
     </wire>
     <wire>
       <p1 x="2520" y="940"/>
@@ -9270,23 +9599,23 @@ Just ~AssertSystemBus?</string>
     </wire>
     <wire>
       <p1 x="1720" y="1460"/>
-      <p2 x="1780" y="1460"/>
+      <p2 x="1760" y="1460"/>
     </wire>
     <wire>
       <p1 x="2240" y="1460"/>
       <p2 x="2320" y="1460"/>
     </wire>
     <wire>
-      <p1 x="1400" y="1460"/>
-      <p2 x="1420" y="1460"/>
+      <p1 x="2080" y="1460"/>
+      <p2 x="2180" y="1460"/>
     </wire>
     <wire>
-      <p1 x="1780" y="1460"/>
+      <p1 x="1760" y="1460"/>
       <p2 x="2000" y="1460"/>
     </wire>
     <wire>
-      <p1 x="2080" y="1460"/>
-      <p2 x="2180" y="1460"/>
+      <p1 x="1400" y="1460"/>
+      <p2 x="1420" y="1460"/>
     </wire>
     <wire>
       <p1 x="-100" y="180"/>
@@ -9323,6 +9652,10 @@ Just ~AssertSystemBus?</string>
     <wire>
       <p1 x="160" y="180"/>
       <p2 x="200" y="180"/>
+    </wire>
+    <wire>
+      <p1 x="-960" y="-440"/>
+      <p2 x="-900" y="-440"/>
     </wire>
     <wire>
       <p1 x="-780" y="1720"/>
@@ -9395,6 +9728,10 @@ Just ~AssertSystemBus?</string>
     <wire>
       <p1 x="160" y="440"/>
       <p2 x="200" y="440"/>
+    </wire>
+    <wire>
+      <p1 x="-960" y="-700"/>
+      <p2 x="-900" y="-700"/>
     </wire>
     <wire>
       <p1 x="1540" y="700"/>
@@ -9521,16 +9858,16 @@ Just ~AssertSystemBus?</string>
       <p2 x="1480" y="1480"/>
     </wire>
     <wire>
+      <p1 x="1580" y="1480"/>
+      <p2 x="1660" y="1480"/>
+    </wire>
+    <wire>
       <p1 x="1560" y="1480"/>
       <p2 x="1580" y="1480"/>
     </wire>
     <wire>
       <p1 x="1660" y="1480"/>
       <p2 x="1680" y="1480"/>
-    </wire>
-    <wire>
-      <p1 x="1580" y="1480"/>
-      <p2 x="1660" y="1480"/>
     </wire>
     <wire>
       <p1 x="-660" y="200"/>
@@ -9571,6 +9908,14 @@ Just ~AssertSystemBus?</string>
     <wire>
       <p1 x="-500" y="200"/>
       <p2 x="-160" y="200"/>
+    </wire>
+    <wire>
+      <p1 x="-1120" y="-460"/>
+      <p2 x="-1040" y="-460"/>
+    </wire>
+    <wire>
+      <p1 x="-1040" y="-460"/>
+      <p2 x="-820" y="-460"/>
     </wire>
     <wire>
       <p1 x="-960" y="1740"/>
@@ -9633,12 +9978,12 @@ Just ~AssertSystemBus?</string>
       <p2 x="-620" y="460"/>
     </wire>
     <wire>
-      <p1 x="2120" y="460"/>
-      <p2 x="2180" y="460"/>
-    </wire>
-    <wire>
       <p1 x="-620" y="460"/>
       <p2 x="-460" y="460"/>
+    </wire>
+    <wire>
+      <p1 x="2120" y="460"/>
+      <p2 x="2180" y="460"/>
     </wire>
     <wire>
       <p1 x="-460" y="720"/>
@@ -9677,7 +10022,7 @@ Just ~AssertSystemBus?</string>
       <p2 x="180" y="980"/>
     </wire>
     <wire>
-      <p1 x="1820" y="1240"/>
+      <p1 x="1800" y="1240"/>
       <p2 x="2320" y="1240"/>
     </wire>
     <wire>
@@ -9755,6 +10100,10 @@ Just ~AssertSystemBus?</string>
     <wire>
       <p1 x="160" y="220"/>
       <p2 x="200" y="220"/>
+    </wire>
+    <wire>
+      <p1 x="-1020" y="-480"/>
+      <p2 x="-840" y="-480"/>
     </wire>
     <wire>
       <p1 x="-1320" y="1760"/>
@@ -9917,12 +10266,12 @@ Just ~AssertSystemBus?</string>
       <p2 x="1480" y="1520"/>
     </wire>
     <wire>
-      <p1 x="-960" y="1520"/>
-      <p2 x="-940" y="1520"/>
-    </wire>
-    <wire>
       <p1 x="-620" y="1520"/>
       <p2 x="-600" y="1520"/>
+    </wire>
+    <wire>
+      <p1 x="-960" y="1520"/>
+      <p2 x="-940" y="1520"/>
     </wire>
     <wire>
       <p1 x="-1200" y="1520"/>
@@ -9951,6 +10300,10 @@ Just ~AssertSystemBus?</string>
     <wire>
       <p1 x="660" y="240"/>
       <p2 x="680" y="240"/>
+    </wire>
+    <wire>
+      <p1 x="-1000" y="-500"/>
+      <p2 x="-860" y="-500"/>
     </wire>
     <wire>
       <p1 x="-1540" y="1780"/>
@@ -10081,6 +10434,10 @@ Just ~AssertSystemBus?</string>
       <p2 x="-1540" y="1780"/>
     </wire>
     <wire>
+      <p1 x="-900" y="-440"/>
+      <p2 x="-900" y="-280"/>
+    </wire>
+    <wire>
       <p1 x="1540" y="600"/>
       <p2 x="1540" y="700"/>
     </wire>
@@ -10129,6 +10486,14 @@ Just ~AssertSystemBus?</string>
       <p2 x="-1160" y="1960"/>
     </wire>
     <wire>
+      <p1 x="1800" y="1260"/>
+      <p2 x="1800" y="1340"/>
+    </wire>
+    <wire>
+      <p1 x="1800" y="480"/>
+      <p2 x="1800" y="600"/>
+    </wire>
+    <wire>
       <p1 x="520" y="1100"/>
       <p2 x="520" y="1140"/>
     </wire>
@@ -10173,14 +10538,6 @@ Just ~AssertSystemBus?</string>
       <p2 x="520" y="360"/>
     </wire>
     <wire>
-      <p1 x="1800" y="800"/>
-      <p2 x="1800" y="1220"/>
-    </wire>
-    <wire>
-      <p1 x="1800" y="480"/>
-      <p2 x="1800" y="600"/>
-    </wire>
-    <wire>
       <p1 x="1160" y="1720"/>
       <p2 x="1160" y="1760"/>
     </wire>
@@ -10217,8 +10574,16 @@ Just ~AssertSystemBus?</string>
       <p2 x="1420" y="1560"/>
     </wire>
     <wire>
+      <p1 x="-1040" y="-760"/>
+      <p2 x="-1040" y="-680"/>
+    </wire>
+    <wire>
       <p1 x="-1040" y="360"/>
       <p2 x="-1040" y="400"/>
+    </wire>
+    <wire>
+      <p1 x="-1040" y="-680"/>
+      <p2 x="-1040" y="-460"/>
     </wire>
     <wire>
       <p1 x="-1040" y="400"/>
@@ -10247,6 +10612,10 @@ Just ~AssertSystemBus?</string>
     <wire>
       <p1 x="-1560" y="1160"/>
       <p2 x="-1560" y="1200"/>
+    </wire>
+    <wire>
+      <p1 x="-920" y="-580"/>
+      <p2 x="-920" y="-560"/>
     </wire>
     <wire>
       <p1 x="1560" y="1440"/>
@@ -10297,16 +10666,12 @@ Just ~AssertSystemBus?</string>
       <p2 x="920" y="1960"/>
     </wire>
     <wire>
-      <p1 x="-1180" y="1860"/>
-      <p2 x="-1180" y="1880"/>
-    </wire>
-    <wire>
       <p1 x="-540" y="260"/>
       <p2 x="-540" y="540"/>
     </wire>
     <wire>
-      <p1 x="1820" y="1260"/>
-      <p2 x="1820" y="1340"/>
+      <p1 x="-1180" y="1860"/>
+      <p2 x="-1180" y="1880"/>
     </wire>
     <wire>
       <p1 x="1180" y="1340"/>
@@ -10319,6 +10684,10 @@ Just ~AssertSystemBus?</string>
     <wire>
       <p1 x="1180" y="1580"/>
       <p2 x="1180" y="1600"/>
+    </wire>
+    <wire>
+      <p1 x="-800" y="-600"/>
+      <p2 x="-800" y="-540"/>
     </wire>
     <wire>
       <p1 x="-800" y="220"/>
@@ -10365,6 +10734,10 @@ Just ~AssertSystemBus?</string>
       <p2 x="1440" y="1560"/>
     </wire>
     <wire>
+      <p1 x="-1060" y="-600"/>
+      <p2 x="-1060" y="-540"/>
+    </wire>
+    <wire>
       <p1 x="-1700" y="1100"/>
       <p2 x="-1700" y="1140"/>
     </wire>
@@ -10391,6 +10764,10 @@ Just ~AssertSystemBus?</string>
     <wire>
       <p1 x="-1580" y="600"/>
       <p2 x="-1580" y="640"/>
+    </wire>
+    <wire>
+      <p1 x="-940" y="-580"/>
+      <p2 x="-940" y="-560"/>
     </wire>
     <wire>
       <p1 x="1580" y="1460"/>
@@ -10429,6 +10806,10 @@ Just ~AssertSystemBus?</string>
       <p2 x="940" y="1600"/>
     </wire>
     <wire>
+      <p1 x="-560" y="280"/>
+      <p2 x="-560" y="520"/>
+    </wire>
+    <wire>
       <p1 x="-1200" y="1520"/>
       <p2 x="-1200" y="1560"/>
     </wire>
@@ -10441,10 +10822,6 @@ Just ~AssertSystemBus?</string>
       <p2 x="-1200" y="1780"/>
     </wire>
     <wire>
-      <p1 x="-560" y="280"/>
-      <p2 x="-560" y="520"/>
-    </wire>
-    <wire>
       <p1 x="2480" y="1680"/>
       <p2 x="2480" y="1720"/>
     </wire>
@@ -10455,6 +10832,14 @@ Just ~AssertSystemBus?</string>
     <wire>
       <p1 x="-820" y="1560"/>
       <p2 x="-820" y="1600"/>
+    </wire>
+    <wire>
+      <p1 x="-820" y="-680"/>
+      <p2 x="-820" y="-460"/>
+    </wire>
+    <wire>
+      <p1 x="-820" y="-460"/>
+      <p2 x="-820" y="-380"/>
     </wire>
     <wire>
       <p1 x="1460" y="1520"/>
@@ -10493,12 +10878,16 @@ Just ~AssertSystemBus?</string>
       <p2 x="1980" y="1340"/>
     </wire>
     <wire>
-      <p1 x="-960" y="1520"/>
-      <p2 x="-960" y="1740"/>
-    </wire>
-    <wire>
       <p1 x="-1600" y="940"/>
       <p2 x="-1600" y="1020"/>
+    </wire>
+    <wire>
+      <p1 x="-960" y="-860"/>
+      <p2 x="-960" y="-700"/>
+    </wire>
+    <wire>
+      <p1 x="-960" y="1520"/>
+      <p2 x="-960" y="1740"/>
     </wire>
     <wire>
       <p1 x="960" y="1200"/>
@@ -10535,6 +10924,10 @@ Just ~AssertSystemBus?</string>
     <wire>
       <p1 x="-580" y="300"/>
       <p2 x="-580" y="500"/>
+    </wire>
+    <wire>
+      <p1 x="-840" y="-660"/>
+      <p2 x="-840" y="-480"/>
     </wire>
     <wire>
       <p1 x="840" y="1000"/>
@@ -10597,6 +10990,10 @@ Just ~AssertSystemBus?</string>
       <p2 x="-340" y="640"/>
     </wire>
     <wire>
+      <p1 x="-980" y="-620"/>
+      <p2 x="-980" y="-520"/>
+    </wire>
+    <wire>
       <p1 x="-980" y="1920"/>
       <p2 x="-980" y="1960"/>
     </wire>
@@ -10639,6 +11036,10 @@ Just ~AssertSystemBus?</string>
     <wire>
       <p1 x="-1240" y="380"/>
       <p2 x="-1240" y="640"/>
+    </wire>
+    <wire>
+      <p1 x="-860" y="-640"/>
+      <p2 x="-860" y="-500"/>
     </wire>
     <wire>
       <p1 x="-860" y="1480"/>
@@ -10693,8 +11094,20 @@ Just ~AssertSystemBus?</string>
       <p2 x="1120" y="1140"/>
     </wire>
     <wire>
+      <p1 x="1760" y="1260"/>
+      <p2 x="1760" y="1460"/>
+    </wire>
+    <wire>
       <p1 x="1760" y="260"/>
       <p2 x="1760" y="340"/>
+    </wire>
+    <wire>
+      <p1 x="-1380" y="1620"/>
+      <p2 x="-1380" y="1860"/>
+    </wire>
+    <wire>
+      <p1 x="-1380" y="1860"/>
+      <p2 x="-1380" y="1960"/>
     </wire>
     <wire>
       <p1 x="-740" y="1600"/>
@@ -10709,16 +11122,12 @@ Just ~AssertSystemBus?</string>
       <p2 x="-740" y="900"/>
     </wire>
     <wire>
-      <p1 x="-1380" y="1620"/>
-      <p2 x="-1380" y="1860"/>
-    </wire>
-    <wire>
-      <p1 x="-1380" y="1860"/>
-      <p2 x="-1380" y="1960"/>
-    </wire>
-    <wire>
       <p1 x="2660" y="1800"/>
       <p2 x="2660" y="1820"/>
+    </wire>
+    <wire>
+      <p1 x="-1000" y="-640"/>
+      <p2 x="-1000" y="-500"/>
     </wire>
     <wire>
       <p1 x="-1000" y="1860"/>
@@ -10767,6 +11176,10 @@ Just ~AssertSystemBus?</string>
     <wire>
       <p1 x="1900" y="60"/>
       <p2 x="1900" y="340"/>
+    </wire>
+    <wire>
+      <p1 x="-880" y="-620"/>
+      <p2 x="-880" y="-520"/>
     </wire>
     <wire>
       <p1 x="-880" y="1540"/>
@@ -10825,16 +11238,8 @@ Just ~AssertSystemBus?</string>
       <p2 x="-1780" y="660"/>
     </wire>
     <wire>
-      <p1 x="1780" y="1260"/>
-      <p2 x="1780" y="1460"/>
-    </wire>
-    <wire>
-      <p1 x="-760" y="1580"/>
-      <p2 x="-760" y="1680"/>
-    </wire>
-    <wire>
-      <p1 x="-760" y="500"/>
-      <p2 x="-760" y="940"/>
+      <p1 x="1780" y="800"/>
+      <p2 x="1780" y="1220"/>
     </wire>
     <wire>
       <p1 x="-1400" y="140"/>
@@ -10847,6 +11252,14 @@ Just ~AssertSystemBus?</string>
     <wire>
       <p1 x="-1400" y="540"/>
       <p2 x="-1400" y="560"/>
+    </wire>
+    <wire>
+      <p1 x="-760" y="1580"/>
+      <p2 x="-760" y="1680"/>
+    </wire>
+    <wire>
+      <p1 x="-760" y="500"/>
+      <p2 x="-760" y="940"/>
     </wire>
     <wire>
       <p1 x="2680" y="1800"/>
@@ -10863,6 +11276,10 @@ Just ~AssertSystemBus?</string>
     <wire>
       <p1 x="1400" y="1460"/>
       <p2 x="1400" y="1480"/>
+    </wire>
+    <wire>
+      <p1 x="-1020" y="-660"/>
+      <p2 x="-1020" y="-480"/>
     </wire>
     <wire>
       <p1 x="-1020" y="640"/>
