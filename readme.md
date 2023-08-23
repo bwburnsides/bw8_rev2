@@ -12,3 +12,7 @@
 - [ ] Digital 74 logic-based simulation
     - [ ] Timing analysis via wavedrom
 - TBD. Breadboard prototyping, board design, peripherals, ROM shadowing
+
+## System Bus Map
+
+![`bw8` rev2 system bus](assets/system_bus_map.png)
